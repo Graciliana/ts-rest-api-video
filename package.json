@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "npm run swagger",
-    "build": "rimaraf build && tsc",
+    "build": "rimraf build && tsc",
     "preserve": "npm run build",
     "pre:dev": "npm run swagger",
-    "dev":"cross-env NODE_ENV=development concurrently \"nodemon\" \"nodemon -x tsoa spec\"",
-    "start": "cross-env NODE_EN=production node build/index.js",
+    "dev": "npm run build && cross-env NODE_ENV=development concurrently \"nodemon\" \"nodemon -x tsoa spec\"",
+    "start": "cross-env NODE_ENV=production node build/index.js",
     "swagger": "tsoa spec",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -37,10 +37,9 @@
   },
   "nodemonConfig": {
     "whatch": [
-    "src"
+      "src"
     ],
-    "ext":"ts",
-   
-    "exec":"ts-node src/index.ts"
+    "ext": "ts",
+    "exec": "npx ts-node src/index.ts"
   }
 }

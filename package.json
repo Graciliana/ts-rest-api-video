@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "prebuild": "npm run swagger",
+    "build": "rimaraf build && tsc",
+    "preserve": "npm run build",
+    "pre:dev": "npm run swagger",
+    "dev":"cross-env NODE_ENV=development concurrently \"nodemon\" \"nodemon -x tsoa spec\"",
+    "start": "cross-env NODE_EN=production node build/index.js",
+    "swagger": "tsoa spec",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -28,5 +34,13 @@
     "rimraf": "^5.0.1",
     "swagger-ui-express": "^4.6.3",
     "tsoa": "^5.1.1"
+  },
+  "nodemonConfig": {
+    "whatch": [
+    "src"
+    ],
+    "ext":"ts",
+   
+    "exec":"ts-node src/index.ts"
   }
 }

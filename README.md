@@ -1,6 +1,6 @@
 ﻿# TypeScript REST API Aplicação com GitHub Copilot + Swagger + Docker + Azure Database for PostgreSQL + Jest + TypeORM
 
-# TEcnologias
+# Tecnologias
 
 - Copilot
 - Swagger

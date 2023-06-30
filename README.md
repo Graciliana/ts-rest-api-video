@@ -14,8 +14,8 @@
 
 - [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-97470-gllemos)
 - [TypeScript](https://www.typescriptlang.org/)
-  Node.js 18.x
-  Azure Database for PostgreSQL
+ - [Node.js 18.x](https://nodejs.org/en)
+- [Azure Database for PostgreSQL]()
   Docker Desktop
   Azure Free Account
   Some Visual Studio Code Extensions:
@@ -25,6 +25,20 @@
   Jest Extension
   REST Client Extension
   Remote Containers Extension
+
+💻 Recursos Importantes & Links  💻 
+
+✅Vídeo: Docker Zero to Hero: <https://www.youtube.com/watch?v=BICy_5hXWWs>
+✅Vídeo: Rodando Docker no WSL 2 sem Docker Desktop:<https://www.youtube.com/watch?v=wpdcGgRY5kk&t=0s>
+
+✅Dockerfile reference (documentação): <https://docs.docker.com/engine/reference/builder>
+✅Docker-compose (documentação): <https://docs.docker.com/compose/>
+✅Awesome Compose (repositório): <https://github.com/docker/awesome-compose>
+✅Azure Database for PostgreSQL: <https://azure.microsoft.com/pt-br/products/postgresql/?WT.mc_id=javascript-97470-gllemos>
+✅GitHub Copilot: <https://github.com/features/copilot>
+✅Azure Free Account: <https://azure.microsoft.com/pt-br/?WT.mc_id=javascript-97470-gllemos>
+✅Documentação: Tsoa: <https://tsoa-community.github.io/docs/>
+✅Documentação: Swagger: <https://swagger.io/docs/>
 
 ⭐️ Repositório do GitHub do Curso ⭐️
 
